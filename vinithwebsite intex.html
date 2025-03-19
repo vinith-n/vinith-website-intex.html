@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinith Personal Website</title>
+    <style>
+        /* Ensure html and body fill the entire screen */
+        html, body {
+            height: 100%; /* Fill entire viewport height */
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        /* Make particles.js background cover the entire page */
+        #particles-js {
+            position: fixed; /* Use fixed positioning to keep particles in place */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* Ensure full height coverage */
+            z-index: -1; /* Place behind content */
+        }
+
+        body {
+            background-color: #000000; /* Black background for the body */
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative; /* Ensure body content stays above particles */
+            z-index: 1; /* Ensure content is above particles */
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 2; /* Ensure it stays above particles */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #00c3ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Headings */
+        h1, h2, h3, h4 {
+            color: #00c3ff;
+        }
+
+        /* Lists */
+        ul, ol {
+            text-align: left;
+            display: inline-block;
+        }
+
+        /* Links */
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff5733;
+        }
+
+        /* Images */
+        img {
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 150px; /* Responsive image sizing */
+        }
+
+        /* Contact Info */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 2px solid #00c3ff;
+        }
+
+        /* AI Website Builder Section */
+        .ai-builder-section {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-top: 2px solid #00c3ff;
+        }
+        .ai-builder-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .ai-builder-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .ai-builder-section a {
+            background-color: #00c3ff;
+            color: #000000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .ai-builder-section a:hover {
+            background-color: #ffcc00;
+        }
+
+        /* AWS Services Section */
+        .aws-services {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+        }
+        .aws-services h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .aws-services ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .aws-services ul li {
+            background-color: #ff0000; /* Red background for individual AWS service boxes */
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+        .aws-services ul li a {
+            color: black; /* Set text color to black */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .aws-services ul li a:hover {
+            background-color: white;
+            color: #ff0000; /* Red text color on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            .contact-info {
+                font-size: 16px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .ai-builder-section h2 {
+                font-size: 24px;
+            }
+            .ai-builder-section p {
+                font-size: 16px;
+            }
+            .aws-services ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Particles.js Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <h1 id="about">This Website is Developed For Using AWS Cloud Services</h1>
+
+    <h3>What is an AWS Certified Solutions Architect?</h3>
+    <h4>
+        The AWS Certified Solutions Architect – Associate certification is designed for individuals who want to demonstrate their expertise in designing cost-effective and high-performance solutions on Amazon Web Services (AWS).
+    </h4>
+    <hr>
+
+    <h3 id="certifications">Certification Details</h3>
+    <ol>
+        <li>The AWS Certified Solutions Architect – Associate certification showcases knowledge and skills across a wide range of AWS services.</li>
+        <li>It focuses on designing cost and performance optimized solutions, emphasizing the AWS Well-Architected Framework.</li>
+        <li>While deep hands-on coding experience is not required, familiarity with basic programming concepts can be advantageous.</li>
+    </ol>
+
+    <h3>What You’ll Learn:</h3>
+    <ol>
+        <li>Compute, networking, storage, and database AWS services.</li>
+        <li>Deployment and management of workloads on AWS.</li>
+        <li>Implementing security controls and compliance requirements.</li>
+        <li>Using the AWS Management Console and Command Line Interface (CLI).</li>
+        <li>Identifying suitable AWS services for specific technical requirements.</li>
+    </ol>
+
+    <h3>Learn More</h3>
+    <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">AWS Official Site</a> |
+    <a href="https://www.simplilearn.com/cloud-computing/aws-solution-architect-associate-training">Simplilearn</a> |
+    <a href="https://www.coursera.org/articles/aws-solution-architect">Coursera</a>
+
+    <h3>Watch AWS Content</h3>
+    <img src="th.jpeg" alt="YouTube AWS" width="100px"> <br>
+    <a href="https://www.youtube.com/@amazonwebservices">AWS Official YouTube Channel</a>
+
+    <h3>Want to Become an AWS Certified Solutions Architect?</h3>
+    <p>Here’s a step-by-step guide to help you navigate the certification path:</p>
+    <ol>
+        <li>AWS Certified Cloud Practitioner (Beginner Level)</li>
+        <li>AWS Certified Solutions Architect – Associate (Intermediate Level)</li>
+        <li>AWS Certified Developer – Associate (For Application Developers)</li>
+        <li>AWS Certified SysOps Administrator – Associate (For Operations & Management)</li>
+        <li>AWS Certified Data Analytics – Specialty (For Data Processing & ML)</li>
+        <li>AWS Certified Solutions Architect – Professional (For Advanced Architects)</li>
+    </ol>
+
+    <h1 id="projects">My Work on AWS Architecture Projects</h1>
+    <ol>
+        <li>Launching a Virtual Server (EC2)</li>
+        <li>Hosting a Static Website (S3)</li>
+        <li>Setting up a Relational Database (RDS)</li>
+        <li>Building a Serverless Function (Lambda)</li>
+        <li>Creating a Virtual Private Cloud (VPC)</li>
+        <li>Creating a CloudWatch for Monitoring All Services</li>
+        <li>Implementing Cross-Region Replication (S3)</li>
+        <li>Setting Up Multi-Factor Authentication (IAM)</li>
+        <li>Working with SES, SQS, Auto Scaling, Load Balancers</li>
+    </ol>
+    <hr>
+
+    <h2 id="contact">Information About the Website Builder</h2>
+    <img src="vinith.jpg" alt="Vinith Image" width="150px">
+    <h2>VINITH N</h2>
+
+    <div class="contact-info">
+        <h2>📞 +91 8220176987 | 📧 nvinith349@gmail.com</h2>
+        <h2>🏡 Yedakkadu, The Nilgiris, Tamil Nadu, India</h2>
+    </div>
+
+    <!-- AI Website Builder Section -->
+    <div class="ai-builder-section">
+        <h2>Get a Head Start on Website Creation with AI</h2>
+        <p>Create a custom website tailored to your business needs. 10X faster with AI-powered tools!</p>
+        <a href="https://example.com/ai-website-builder" target="_blank">Generate Your Website</a>
+        <p>✔ No credit card required</p>
+
+        <!-- AWS Services Section -->
+        <div class="aws-services">
+            <h3>Explore AWS Services</h3>
+            <ul>
+                <li><a href="https://aws.amazon.com/ec2/" target="_blank">EC2</a></li>
+                <li><a href="https://aws.amazon.com/s3/" target="_blank">S3</a></li>
+                <li><a href="https://aws.amazon.com/rds/" target="_blank">RDS</a></li>
+                <li><a href="https://aws.amazon.com/lambda/" target="_blank">Lambda</a></li>
+                <li><a href="https://aws.amazon.com/vpc/" target="_blank">VPC</a></li>
+                <li><a href="https://aws.amazon.com/cloudwatch/" target="_blank">CloudWatch</a></li>
+                <li><a href="https://aws.amazon.com/iam/" target="_blank">IAM</a></li>
+                <li><a href="https://aws.amazon.com/ses/" target="_blank">SES</a></li>
+                <li><a href="https://aws.amazon.com/sqs/" target="_blank">SQS</a></li>
+                <li><a href="https://aws.amazon.com/autoscaling/" target="_blank">Auto Scaling</a></li>
+                <li><a href="https://aws.amazon.com/elasticloadbalancing/" target="_blank">Load Balancers</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Load Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Initialize Particles.js -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            particlesJS("particles-js", {
+                particles: {
+                    number: { value: 100, density: { enable: true, value_area: 800 } },
+                    color: { value: "#00c3ff" }, // Blue particles
+                    shape: { type: "circle" },
+                    opacity: { value: 0.7, random: true },
+                    size: { value: 3, random: true },
+                    move: { enable: true, speed: 3, direction: "none" }
+                },
+                interactivity: {
+                    events: {
+                        onhover: { enable: true, mode: "bubble" }, // Hover effect
+                        onclick: { enable: true, mode: "push" } // Click effect
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
